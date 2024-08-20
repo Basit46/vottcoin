@@ -12,8 +12,8 @@ const Roadmap = () => {
         meme-coin election game to the next level.
       </p>
 
-      <div className="mt-[50px] flex gap-[20px] justify-center">
-        <div className="w-[287px] flex flex-col gap-[20px]">
+      <div className="mt-[50px] w-full px-[20px] vsm:px-[60px] flex gap-[20px] justify-center">
+        <div className="w-[24%] flex flex-col gap-[20px]">
           <div className="item w-full">
             <div>
               <div className="size-[43px] bg-[#FF9527]" />
@@ -57,7 +57,7 @@ const Roadmap = () => {
             </ul>
           </div>
         </div>
-        <div className="item w-[287px]">
+        <div className="item w-[24%]">
           <div>
             <div className="size-[43px] bg-[#3C2974]" />
             <p>Q4 2024:</p>
@@ -74,7 +74,7 @@ const Roadmap = () => {
             <li>Expansion of Game Features (New Boosts, Challenges)</li>
           </ul>
         </div>
-        <div className="item w-[287px]">
+        <div className="item w-[24%]">
           <div>
             <div className="size-[43px] bg-[#FFF960]" />
             <p>Q1 2025:</p>
@@ -101,7 +101,7 @@ const Roadmap = () => {
             </li>
           </ul>
         </div>
-        <div className="item w-[287px]">
+        <div className="item w-[24%]">
           <div>
             <div className="size-[43px] bg-[#6850FF]" />
             <p>Q2 2025:</p>
