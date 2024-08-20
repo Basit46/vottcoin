@@ -26,7 +26,7 @@ const Hero = () => {
         <p className="text-[44px] font-Boogaloo text-center">
           The Ultimate Meme-Coin Election Game!
         </p>
-        <button className="mt-[20px] mb-[40px] w-[336px] h-[70px] text-[24px] font-Poppins font-[900] text-[#0D0914] leading-none rounded-[42px]">
+        <button className="mt-[20px] mb-[50px] w-[336px] py-[5px] text-[24px] font-Poppins font-[900] text-[#0D0914] leading-[1.1] rounded-[42px]">
           Join the <br /> Revolution
         </button>
         <p className="text-[#7D7D7D] font-[900] text-[20px] font-Poppins tracking-[8px]">
@@ -34,15 +34,15 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="mt-[20px] w-full h-fit bg-[#3C2974] flex items-center justify-between pb-[10px]">
-        <img src={small1} alt="Miniature" />
-        <img src={small2} alt="Miniature" />
-        <img src={small3} alt="Miniature" />
-        <img src={small4} alt="Miniature" />
-        <img src={small5} alt="Miniature" />
-        <img src={small6} alt="Miniature" />
-        <img src={small7} alt="Miniature" />
-        <img src={small8} alt="Miniature" />
+      <div className="mt-[20px] w-full space-x-[-60px] h-fit bg-[#3C2974] flex items-center justify-between pb-[10px]">
+        <img className="w-[180px] 2xl:w-[201px]" src={small1} alt="Miniature" />
+        <img className="w-[180px] 2xl:w-[201px]" src={small2} alt="Miniature" />
+        <img className="w-[180px] 2xl:w-[201px]" src={small3} alt="Miniature" />
+        <img className="w-[180px] 2xl:w-[201px]" src={small4} alt="Miniature" />
+        <img className="w-[180px] 2xl:w-[201px]" src={small5} alt="Miniature" />
+        <img className="w-[180px] 2xl:w-[201px]" src={small6} alt="Miniature" />
+        <img className="w-[180px] 2xl:w-[201px]" src={small7} alt="Miniature" />
+        <img className="w-[180px] 2xl:w-[201px]" src={small8} alt="Miniature" />
       </div>
     </div>
   );
