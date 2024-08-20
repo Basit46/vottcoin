@@ -6,3 +6,15 @@
 
 @layer components {
 }
+
+body {
+  background-color: #0d0914;
+  color: white;
+}
+
+nav .btn1 {
+  background: linear-gradient(315deg, #ff8c22 0%, #ff9326 56%, #fff960 100%);
+}
+nav .btn2 {
+  background: linear-gradient(315deg, #3c2974 0%, #101112 100%);
+}
