@@ -74,13 +74,18 @@ const Question = ({ id, question, answer, open, setOpen }) => {
         <Arrow className={`${open == id && "rotate-[180deg]"} text-[20px]`} />
       </div>
       <div className={`${open == id ? "h-auto" : "h-0"} overflow-hidden`}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          commodi, animi aspernatur iusto beatae est, alias maxime tenetur
-          accusamus numquam aliquam ad. Earum ab dignissimos quas quam ipsum ad
-          accusamus.
-        </p>
+        <p>{answers[parseFloat(id) - 1]}</p>
       </div>
     </div>
   );
 };
+
+const answers = [
+  "VottCoin is a meme-based election game on Telegram where players tap to gather votes, boost their campaigns, and compete in election seasons for rewards.",
+  "Simply connect your wallet, buy VottCoin tokens, and start playing. You can earn rewards by participating in the game and inviting friends.",
+  "You can purchase tokens during our presale or from supported exchanges after listing. Visit the 'How to Buy' page for detailed instructions.",
+  "Token holders can participate in the game, stake tokens for rewards, and gain access to exclusive NFTs and events.",
+  "Tap the screen in the game to collect votes. Boost your campaign to increase your passive influence.",
+  "Election Seasons are special events where players compete for top rankings and exclusive rewards.",
+  "Yes, VottCoin is built on secure blockchain technology, and we ensure all transactions and game mechanics are transparent and trustworthy.",
+];
