@@ -47,13 +47,13 @@
   }
 
   .howto .item {
-    @apply h-fit rounded-[20px] py-[20px] px-[10px] bg-[#00000047];
+    @apply rounded-[20px] py-[20px] px-[10px] bg-[#00000047];
   }
   .howto .item > div {
     @apply flex items-center gap-[5px];
   }
   .howto .item > div > div {
-    @apply rounded-full;
+    @apply rounded-full shrink-0;
   }
   .howto .item > div p {
     @apply text-[30px] font-Rajdhani font-bold leading-none;

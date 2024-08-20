@@ -14,11 +14,11 @@ const HowToBuy = () => {
         exciting election game in the crypto world.
       </p>
 
-      <div className="mt-[100px] px-[20px] xmd:px-[60px]">
-        <div className="flex justify-center gap-[30px]">
-          <img className="shrink-0 h-fit w-[400px]" src={voteImg} alt="vote" />
+      <div className="mt-[70px] px-[20px] xmd:px-[60px]">
+        <div className="flex justify-center items-end gap-[30px]">
+          <img className="shrink-0 h-fit w-[340px]" src={voteImg} alt="vote" />
 
-          <div className="item w-[340px] h-full">
+          <div className="item w-[340px] self-stretch">
             <div>
               <div className="h-[33px] w-[5px] bg-[#3C2974]" />
               <p>Step 1: Set Up a Wallet</p>
@@ -36,7 +36,7 @@ const HowToBuy = () => {
             </ul>
           </div>
 
-          <div className="item w-[340px] h-full">
+          <div className="item w-[340px] self-stretch">
             <div>
               <div className="h-[33px] w-[5px] bg-[#45DDFF]" />
               <p>Step 2: Fund Your Wallet</p>
@@ -75,7 +75,7 @@ const HowToBuy = () => {
             </ul>
           </div>
 
-          <div className="item w-[340px] h-fit">
+          <div className="item w-[340px] self-stretch ">
             <div>
               <div className="h-[33px] w-[5px] bg-[#1FF17E]" />
               <p>Step 3: Connect Your Wallet</p>
@@ -90,7 +90,7 @@ const HowToBuy = () => {
             </ul>
           </div>
 
-          <div className="item w-[340px] h-fit">
+          <div className="item w-[340px] self-stretch ">
             <div>
               <div className="h-[33px] w-[5px] bg-[#FFC227]" />
               <p>Step 4: Purchase VottCoin Tokens</p>
