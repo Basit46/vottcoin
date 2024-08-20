@@ -56,7 +56,7 @@ const HowToBuy = () => {
           </div>
         </div>
 
-        <div className="mt-[30px] flex items-end justify-center gap-[30px]">
+        <div className="mt-[50px] flex items-end justify-center gap-[30px]">
           <div className="item w-[340px] h-fit">
             <div>
               <div className="h-[33px] w-[5px] bg-[#FFC227]" />
