@@ -26,6 +26,25 @@
   .features .feature .text2 {
     @apply text-[#969EB2] leading-[26px] font-Poppins;
   }
+
+  .roadmap .item {
+    @apply h-fit rounded-[20px] py-[20px] px-[10px];
+  }
+  .roadmap .item > div {
+    @apply flex items-center gap-[5px];
+  }
+  .roadmap .item > div > div {
+    @apply border-[3px] border-white rounded-full;
+  }
+  .roadmap .item > div p {
+    @apply text-[30px] font-Rajdhani font-bold;
+  }
+  .roadmap .item ul {
+    @apply mt-[10px] text-[#969EB2] font-Poppins leading-[24px];
+  }
+  .roadmap .item li {
+    @apply list-disc list-outside ml-[20px];
+  }
 }
 
 body {
@@ -78,4 +97,17 @@ nav .btn2 {
 
 .roadmap .main {
   clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+}
+.roadmap .item {
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    81.07deg,
+    #2c2d47 53.33%,
+    #1b1c36 93.73%
+  );
 }
