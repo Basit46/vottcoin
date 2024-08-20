@@ -11,6 +11,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .token .clip-text {
+    background: linear-gradient(169.65deg, #fff960 -34.09%, #ff8c22 100.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .features .feature {
+    @apply min-h-[146px] rounded-[30px] border border-[#6850FF] flex items-center py-[10px] px-[10px] gap-[20px];
+  }
+  .features .feature .text1 {
+    @apply mb-[2px] text-[30px] font-bold font-Rajdhani;
+  }
+  .features .feature .text2 {
+    @apply text-[#969EB2] leading-[26px] font-Poppins;
+  }
 }
 
 body {
@@ -47,3 +62,20 @@ nav .btn2 {
 /* .hero button:hover {
   box-shadow: 0px 0px 0px 5px #fff960;
 } */
+
+.about h1 {
+  background: linear-gradient(169.65deg, #fff960 -34.09%, #ff8c22 100.99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .about > div {
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(180deg, #3c2974 0%, #101112 100%);
+  border-image-slice: 1;
+  border-radius: 54px;
+} */
+
+.roadmap .main {
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+}
