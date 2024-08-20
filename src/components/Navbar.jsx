@@ -5,8 +5,8 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center pr-[60px] 2xl:pr-[100px]">
-      <div className="w-[20%] 2xl:w-[410px] h-[80px] 2xl:h-[100px] bg-[#6850FF] flex justify-center items-center">
-        <img src={logo} alt="Vottcoin" />
+      <div className="clip-side w-[25%] 2xl:w-[410px] h-[80px] 2xl:h-[100px] bg-[#6850FF] flex justify-center gap-[10px] items-center">
+        <img className="w-[52px]" src={logo} alt="Vottcoin" />
         <h1 className="text-[44px] font-Boogaloo">Vottcoin</h1>
       </div>
 
