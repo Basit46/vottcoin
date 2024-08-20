@@ -71,7 +71,7 @@ const Question = ({ id, question, answer, open, setOpen }) => {
         className="pb-[10px] flex justify-between items-center cursor-pointer"
       >
         <p className="text-[30px] font-Rajdhani font-[600]">{question}</p>
-        <Arrow className="text-[20px]" />
+        <Arrow className={`${open == id && "rotate-[180deg]"} text-[20px]`} />
       </div>
       <div className={`${open == id ? "h-auto" : "h-0"} overflow-hidden`}>
         <p>
