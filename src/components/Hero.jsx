@@ -34,15 +34,15 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="mt-[20px] w-full space-x-[-60px] h-fit bg-[#3C2974] flex items-center justify-between pb-[10px]">
-        <img className="w-[180px] 2xl:w-[201px]" src={small1} alt="Miniature" />
-        <img className="w-[180px] 2xl:w-[201px]" src={small2} alt="Miniature" />
-        <img className="w-[180px] 2xl:w-[201px]" src={small3} alt="Miniature" />
-        <img className="w-[180px] 2xl:w-[201px]" src={small4} alt="Miniature" />
-        <img className="w-[180px] 2xl:w-[201px]" src={small5} alt="Miniature" />
-        <img className="w-[180px] 2xl:w-[201px]" src={small6} alt="Miniature" />
-        <img className="w-[180px] 2xl:w-[201px]" src={small7} alt="Miniature" />
-        <img className="w-[180px] 2xl:w-[201px]" src={small8} alt="Miniature" />
+      <div className="mt-[20px] w-full space-x-[-10px] h-fit bg-[#3C2974] flex items-center justify-center pb-[10px]">
+        <img className="w-[150px] 2xl:w-[201px]" src={small1} alt="Miniature" />
+        <img className="w-[150px] 2xl:w-[201px]" src={small2} alt="Miniature" />
+        <img className="w-[150px] 2xl:w-[201px]" src={small3} alt="Miniature" />
+        <img className="w-[150px] 2xl:w-[201px]" src={small4} alt="Miniature" />
+        <img className="w-[150px] 2xl:w-[201px]" src={small5} alt="Miniature" />
+        <img className="w-[150px] 2xl:w-[201px]" src={small6} alt="Miniature" />
+        <img className="w-[150px] 2xl:w-[201px]" src={small7} alt="Miniature" />
+        <img className="w-[150px] 2xl:w-[201px]" src={small8} alt="Miniature" />
       </div>
     </div>
   );
