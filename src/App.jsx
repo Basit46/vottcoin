@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="max-w-[1600px] mx-auto overflow-x-hidden">
+    <div className="max-w-[1900px] mx-auto overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />

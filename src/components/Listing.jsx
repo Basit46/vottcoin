@@ -9,8 +9,8 @@ import logo4 from "../assets/logo4.png";
 
 const Listing = () => {
   return (
-    <div className="relative mt-[200px] px-[60px]">
-      <img src={bg} alt="background" />
+    <div className="relative mt-[200px] px-[60px] w-full">
+      <img className="mx-auto" src={bg} alt="background" />
 
       <div className="absolute z-[2] top-[-50px] left-1/2 -translate-x-1/2 w-fit mx-auto flex flex-col">
         <h1 className="text-[45px] 2xl:text-[50px] font-Rajdhani font-bold text-center">
