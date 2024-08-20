@@ -7,6 +7,7 @@ import Tokenomics from "./components/Tokenomics";
 import Roadmap from "./components/Roadmap";
 import HowToBuy from "./components/HowToBuy";
 import FAQs from "./components/FAQs";
+import Listing from "./components/Listing";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Roadmap />
       <HowToBuy />
       <FAQs />
+      <Listing />
     </div>
   );
 }

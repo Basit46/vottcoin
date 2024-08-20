@@ -63,7 +63,7 @@ const FAQs = () => {
 
 export default FAQs;
 
-const Question = ({ id, question, answer, open, setOpen }) => {
+const Question = ({ id, question, open, setOpen }) => {
   return (
     <div className="w-full pb-[10px] border-b border-[#FFFFFF1A]">
       <div
