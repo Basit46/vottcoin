@@ -17,7 +17,7 @@ const Listing = () => {
           Exchange Listings
         </h1>
 
-        <p className="mt-[50px] w-[80%] mx-auto text-center text-[22px] font-[500] font-MavenPro text-[#969EB2] leading-[36px]">
+        <p className="mt-[50px] w-[80%] mx-auto text-center text-[20px] 2xl:text-[22px] font-[500] font-MavenPro text-[#969EB2] leading-[1.4] 2xl:leading-[36px]">
           Tap to Vote is set to be listed on some of the top exchanges in the
           crypto world, including MEXC, Bybit, Coinstore, and KuCoin. This means
           greater accessibility and liquidity for all our players and investors.
@@ -25,7 +25,7 @@ const Listing = () => {
           the action!
         </p>
 
-        <div className="mt-[20px] 2xl:mt-[80px] flex justify-center items-center gap-[10px]">
+        <div className="mt-[40px] 2xl:mt-[80px] flex justify-center items-center gap-[10px]">
           <img className="h-[25px] w-fit" src={logo1} alt="Partner" />
           <div className="size-[10px] bg-[#FFBE18] rounded-full" />
           <img className="h-[25px] w-fit" src={logo2} alt="Partner" />
