@@ -8,6 +8,7 @@ import Roadmap from "./components/Roadmap";
 import HowToBuy from "./components/HowToBuy";
 import FAQs from "./components/FAQs";
 import Listing from "./components/Listing";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <HowToBuy />
       <FAQs />
       <Listing />
+      <Footer />
     </div>
   );
 }
