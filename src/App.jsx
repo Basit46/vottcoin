@@ -5,6 +5,7 @@ import About from "./components/About";
 import Features from "./components/Features";
 import Tokenomics from "./components/Tokenomics";
 import Roadmap from "./components/Roadmap";
+import HowToBuy from "./components/HowToBuy";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Features />
       <Tokenomics />
       <Roadmap />
+      <HowToBuy />
     </div>
   );
 }
