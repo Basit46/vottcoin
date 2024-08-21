@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -9,11 +9,15 @@ import HowToBuy from "./components/HowToBuy";
 import FAQs from "./components/FAQs";
 import Listing from "./components/Listing";
 import Footer from "./components/Footer";
+import MobileMenu from "./components/MobileMenu";
 
 function App() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="max-w-[1900px] mx-auto overflow-x-hidden">
-      <Navbar />
+      <Navbar open={open} setOpen={setOpen} />
+      <MobileMenu open={open} setOpen={setOpen} />
       <Hero />
       <About />
       <Features />

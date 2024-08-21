@@ -8,6 +8,9 @@
   nav a {
     @apply cursor-pointer;
   }
+  .mobile-menu a {
+    @apply cursor-pointer;
+  }
   .hero h1 {
     @apply clip-text;
     background: linear-gradient(91.3deg, #ff5937 26.13%, #ffd837 69.85%);
@@ -82,12 +85,15 @@ body {
 nav .clip-side {
   clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
 }
-nav .btn1 {
+nav .btn1,
+.mobile-menu .btn1 {
   background: linear-gradient(315deg, #ff8c22 0%, #ff9326 56%, #fff960 100%);
 }
-nav .btn2 {
+nav .btn2,
+.mobile-menu .btn2 {
   background: linear-gradient(315deg, #3c2974 0%, #101112 100%);
 }
+
 .hero {
   background-image: url("./assets/heroBg.png");
   background-size: cover;

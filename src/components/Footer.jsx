@@ -104,26 +104,46 @@ const Footer = () => {
               </p>
 
               <div className="flex gap-[10px]">
-                <div className="size-[46px] relative grid place-items-center">
+                <a
+                  href="https://x.com/VoteCoin00"
+                  target="blank"
+                  className="size-[46px] relative grid place-items-center"
+                >
                   <img className="size-full" src={linkBg} alt="linkBg" />
                   <FaFacebookF className="absolute text-[24px]" />
-                </div>
-                <div className="size-[46px] relative grid place-items-center">
+                </a>
+                <a
+                  href="https://x.com/VoteCoin00"
+                  target="blank"
+                  className="size-[46px] relative grid place-items-center"
+                >
                   <img className="size-full" src={linkBg} alt="linkBg" />
                   <FaXTwitter className="absolute text-[24px]" />
-                </div>
-                <div className="size-[46px] relative grid place-items-center">
+                </a>
+                <a
+                  href="https://x.com/VoteCoin00"
+                  target="blank"
+                  className="size-[46px] relative grid place-items-center"
+                >
                   <img className="size-full" src={linkBg} alt="linkBg" />
                   <FaInstagram className="absolute text-[24px]" />
-                </div>
-                <div className="size-[46px] relative grid place-items-center">
+                </a>
+                <a
+                  href="https://x.com/VoteCoin00"
+                  target="blank"
+                  className="size-[46px] relative grid place-items-center"
+                >
                   <img className="size-full" src={linkBg} alt="linkBg" />
                   <FaLinkedin className="absolute text-[24px]" />
-                </div>
-                <div className="size-[46px] relative grid place-items-center">
+                </a>
+                <a
+                  href="https://x.com/VoteCoin00"
+                  target="blank"
+                  className="size-[46px] relative grid place-items-center"
+                >
                   <img className="size-full" src={linkBg} alt="linkBg" />
                   <FaPlay className="absolute text-[24px]" />
-                </div>
+                </a>
               </div>
             </div>
           </div>

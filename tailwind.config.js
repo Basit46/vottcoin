@@ -6,6 +6,7 @@ export default {
       screens: {
         vsm: "500px",
         xmd: "850px",
+        "2xl": "1600px",
       },
       fontFamily: {
         MavenPro: ["Maven Pro", "sans-serif"],
