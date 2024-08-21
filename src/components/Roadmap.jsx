@@ -1,21 +1,20 @@
 import React from "react";
+import rd1 from "../assets/rd1.png";
+import rd2 from "../assets/rd2.png";
 
 const Roadmap = () => {
   return (
-    <div
-      id="roadmap"
-      className="roadmap w-full h-fit mt-[100px] overflow-hidden"
-    >
-      <div className="main w-[90%] vsm:w-[80%] md:w-[45%] mx-auto h-[80px] vsm:h-[100px] bg-[#6850FF] grid place-items-center">
+    <div id="roadmap" className="roadmap relative w-full h-fit mt-[100px]">
+      <div className="relative z-[2] main w-[90%] vsm:w-[80%] md:w-[45%] mx-auto h-[80px] vsm:h-[100px] bg-[#6850FF] grid place-items-center">
         <p className="text-[60px] font-Rajdhani font-bold">Roadmap</p>
       </div>
-      <p className="w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[20px] vsm:text-[28px] font-[500] leading-[1.4] vsm:leading-[36px] font-MavenPro">
+      <p className="relative z-[2] w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[20px] vsm:text-[28px] font-[500] leading-[1.4] vsm:leading-[36px] font-MavenPro">
         Discover the exciting journey that VottCoin is embarking on. Our roadmap
         outlines key milestones, developments, and events that will take our
         meme-coin election game to the next level.
       </p>
 
-      <div className="mt-[50px] w-full px-[20px] vsm:px-[60px] flex flex-col lg:flex-row gap-[20px] items-center lg:items-start justify-center">
+      <div className="relative z-[2] mt-[50px] w-full px-[20px] vsm:px-[60px] flex flex-col lg:flex-row gap-[20px] items-center lg:items-start justify-center">
         <div className="w-full md:w-[80%] lg:w-[24%] flex flex-col gap-[20px]">
           <div className="item w-full">
             <div>
@@ -151,6 +150,17 @@ const Roadmap = () => {
           </ul>
         </div>
       </div>
+
+      <img
+        className="hidden md:block absolute left-0 top-0 w-[50%]"
+        src={rd2}
+        alt="rd1"
+      />
+      <img
+        className="hidden md:block absolute right-0 top-[4%] w-[50%] "
+        src={rd1}
+        alt="rd1"
+      />
     </div>
   );
 };

@@ -3,12 +3,12 @@ import tokenChart from "../assets/token.png";
 
 const Tokenomics = () => {
   return (
-    <div id="token" className="token w-full h-fit mt-[100px] overflow-hidden">
+    <div id="token" className="token relative w-full h-fit mt-[100px] ">
       <h1 className="text-center text-[60px] font-Rajdhani font-[700]">
         Tokenomics
       </h1>
 
-      <div className="mt-[40px] flex justify-center flex-col xl:flex-row items-center gap-[30px] xl:gap-[10px] px-[20px] sm:px-[60px]">
+      <div className="relative z-[2] mt-[40px] flex justify-center flex-col xl:flex-row items-center gap-[30px] xl:gap-[10px] px-[20px] sm:px-[60px]">
         <div className="shrink-0 flex flex-col items-center gap-[30px] xl:items-end">
           <div className="flex flex-col-reverse xl:flex-row items-center xl:items-start gap-[1px] xl:gap-[20px]">
             <div className="flex flex-col items-center xl:items-end">
@@ -99,6 +99,8 @@ const Tokenomics = () => {
           </div>
         </div>
       </div>
+
+      <div className="size-[750px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#6850FF] blur-[50px] opacity-20" />
     </div>
   );
 };

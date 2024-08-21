@@ -38,7 +38,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="mt-[20px] w-full space-x-[-10px] h-fit bg-[#3C2974] flex items-center justify-center pb-[10px]">
+      <div className="mt-[20px] relative z-[3] w-full space-x-[-10px] h-fit bg-[#3C2974] flex items-center justify-center pb-[10px]">
         <img
           className="w-[14%] lg:w-[150px] 2xl:w-[201px]"
           src={small1}

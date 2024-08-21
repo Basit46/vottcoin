@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="about pt-[50px]">
-      <div className="bg-[#1A1A1D] rounded-[54px] w-[90%] md:w-[80%] mx-auto pt-[50px] pb-[30px] px-[20px] xmd:px-[60px]">
+    <div className="about relative pt-[50px] w-full h-fit">
+      <div className="main relative z-[2] bg-[#1A1A1D] rounded-[54px] w-[85%] md:w-[80%] mx-auto pt-[50px] pb-[30px] px-[20px] xmd:px-[60px]">
         <h1 className="text-center uppercase text-[40px] font-Rajdhani font-[600] tracking-[3px] leading-none">
           About vottcoin
         </h1>
@@ -17,6 +17,9 @@ const About = () => {
           election season the meme world has ever seen!
         </p>
       </div>
+
+      <div className="size-[200px] absolute top-[-100px] left-[-100px] rounded-full bg-[#FF8C8C80] blur-[50px] opacity-50" />
+      <div className="size-[200px] absolute top-[-100px] right-[-100px] rounded-full bg-[#6850FF] blur-[50px] opacity-50" />
     </div>
   );
 };
