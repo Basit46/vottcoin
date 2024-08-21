@@ -4,12 +4,12 @@ const Roadmap = () => {
   return (
     <div
       id="roadmap"
-      className="roadmap w-full h-fit mt-[50px] overflow-hidden"
+      className="roadmap w-full h-fit mt-[100px] overflow-hidden"
     >
-      <div className="main w-[80%] md:w-[45%] mx-auto h-[100px] bg-[#6850FF] grid place-items-center">
+      <div className="main w-[90%] vsm:w-[80%] md:w-[45%] mx-auto h-[80px] vsm:h-[100px] bg-[#6850FF] grid place-items-center">
         <p className="text-[60px] font-Rajdhani font-bold">Roadmap</p>
       </div>
-      <p className="w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[28px] font-[500] leading-[36px] font-MavenPro">
+      <p className="w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[20px] vsm:text-[28px] font-[500] leading-[1.4] vsm:leading-[36px] font-MavenPro">
         Discover the exciting journey that VottCoin is embarking on. Our roadmap
         outlines key milestones, developments, and events that will take our
         meme-coin election game to the next level.

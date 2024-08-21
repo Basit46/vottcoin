@@ -3,13 +3,13 @@ import tokenChart from "../assets/token.png";
 
 const Tokenomics = () => {
   return (
-    <div id="token" className="token w-full h-fit mt-[50px] overflow-hidden">
+    <div id="token" className="token w-full h-fit mt-[100px] overflow-hidden">
       <h1 className="text-center text-[60px] font-Rajdhani font-[700]">
         Tokenomics
       </h1>
 
       <div className="mt-[40px] flex justify-center flex-col xl:flex-row items-center gap-[30px] xl:gap-[10px] px-[20px] sm:px-[60px]">
-        <div className="shrink-0 flex flex-col gap-[30px] items-end">
+        <div className="shrink-0 flex flex-col items-center gap-[30px] xl:items-end">
           <div className="flex flex-col-reverse xl:flex-row items-center xl:items-start gap-[1px] xl:gap-[20px]">
             <div className="flex flex-col items-center xl:items-end">
               <p className="text-[30px] font-bold font-Rajdhani text-center xl:text-end">
@@ -55,7 +55,7 @@ const Tokenomics = () => {
 
         <img className="xl:mr-[-12px]" src={tokenChart} alt="Token Chart" />
 
-        <div className="shrink-0 flex flex-col gap-[30px] items-start">
+        <div className="shrink-0 flex flex-col gap-[30px] items-center xl:items-start">
           <div className="flex flex-col xl:flex-row items-center xl:items-start gap-[1px] xl:gap-[20px]">
             <div className="size-[43px] bg-[#3C2974] border-[3px] border-white rounded-full" />
             <div className="flex flex-col">

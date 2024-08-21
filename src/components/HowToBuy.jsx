@@ -3,12 +3,12 @@ import voteImg from "../assets/voteImg.png";
 
 const HowToBuy = () => {
   return (
-    <div className="howto w-full h-fit mt-[50px] overflow-hidden">
+    <div className="howto w-full h-fit mt-[100px] overflow-hidden">
       <h1 className="text-center text-[60px] font-Rajdhani font-bold leading-none">
         How To Buy
       </h1>
 
-      <p className="w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[24px] md:text-[28px] font-[500] leading-[1.4] md:leading-[36px] font-MavenPro">
+      <p className="w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[20px] vsm:text-[24px] md:text-[28px] font-[500] leading-[1.4] md:leading-[36px] font-MavenPro">
         Welcome to the VottCoin revolution! Here’s a simple guide to help you
         get your hands on VottCoin tokens and start participating in the most
         exciting election game in the crypto world.
@@ -111,7 +111,7 @@ const HowToBuy = () => {
       {/* <img className="shrink-0 h-fit w-[340px]" src={voteImg} alt="vote" /> */}
 
       <div className="xmd:hidden mt-[50px] px-[20px] xmd:px-[60px] flex flex-wrap justify-center gap-[30px]">
-        <div className="item w-[80%] md:w-[340px] self-stretch">
+        <div className="item w-[95%] vsm:w-[80%] md:w-[340px] self-stretch">
           <div>
             <div className="h-[33px] w-[5px] bg-[#3C2974]" />
             <p>Step 1: Set Up a Wallet</p>
@@ -129,7 +129,7 @@ const HowToBuy = () => {
           </ul>
         </div>
 
-        <div className="item w-[80%] md:w-[340px] self-stretch">
+        <div className="item w-[95%] vsm:w-[80%] md:w-[340px] self-stretch">
           <div>
             <div className="h-[33px] w-[5px] bg-[#45DDFF]" />
             <p>Step 2: Fund Your Wallet</p>
@@ -148,7 +148,7 @@ const HowToBuy = () => {
           </ul>
         </div>
 
-        <div className="item w-[80%] md:w-[340px] self-stretch ">
+        <div className="item w-[95%] vsm:w-[80%] md:w-[340px] self-stretch ">
           <div>
             <div className="h-[33px] w-[5px] bg-[#1FF17E]" />
             <p>Step 3: Connect Your Wallet</p>
@@ -163,7 +163,7 @@ const HowToBuy = () => {
           </ul>
         </div>
 
-        <div className="item w-[80%] md:w-[340px] self-stretch ">
+        <div className="item w-[95%] vsm:w-[80%] md:w-[340px] self-stretch ">
           <div>
             <div className="h-[33px] w-[5px] bg-[#FFC227]" />
             <p>Step 4: Purchase VottCoin Tokens</p>
@@ -179,7 +179,7 @@ const HowToBuy = () => {
           </ul>
         </div>
 
-        <div className="item w-[80%] md:w-[340px] self-stretch">
+        <div className="item w-[95%] vsm:w-[80%] md:w-[340px] self-stretch">
           <div>
             <div className="h-[33px] w-[5px] bg-[#FFC227]" />
             <p>Step 5: Claim Your Tokens</p>

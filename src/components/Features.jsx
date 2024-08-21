@@ -10,16 +10,16 @@ const Features = () => {
   return (
     <div
       id="features"
-      className="features w-full h-fit mt-[50px] overflow-hidden"
+      className="features w-full h-fit mt-[100px] overflow-hidden"
     >
       <h1 className="text-center text-[60px] font-Rajdhani font-[700]">
         Features
       </h1>
 
-      <div className="relative mt-[30px] w-[85%] mx-auto flex flex-col xmd:flex-row justify-between">
+      <div className="relative mt-[30px] w-[85%] mx-auto flex flex-col xmd:flex-row justify-between gap-[20px] xmd:gap-0">
         <div className="w-full xmd:w-[48%] xl:w-[42%] flex flex-col gap-[20px]">
           <div className="feature relative z-[3] xl:z-0 w-full">
-            <img className="w-[64px]" src={icon1} alt="feature" />
+            <img className="w-[64px] float-left" src={icon1} alt="feature" />
             <div>
               <p className="text1">Tap to Vote</p>
               <p className="text2">

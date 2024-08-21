@@ -7,7 +7,7 @@ const About = () => {
         <h1 className="text-center uppercase text-[40px] font-Rajdhani font-[600] tracking-[3px] leading-none">
           About vottcoin
         </h1>
-        <p className="text-center text-[24px] md:text-[28px] font-MavenPro leading-[1.4] md:leading-[36px] font-[500]">
+        <p className="mt-[10px] text-center text-[20px] vsm:text-[24px] md:text-[28px] font-MavenPro leading-[1.4] md:leading-[36px] font-[500]">
           "Tap to Vote" is not just a game, it's an experience! Step into the
           world of meme-fueled elections where your taps decide the fate of the
           campaign. Whether you're here to flex your tapping speed, gather

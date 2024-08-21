@@ -24,13 +24,13 @@
   }
 
   .features .feature {
-    @apply min-h-[146px] rounded-[30px] bg-[#0d0914] border border-[#6850FF] flex items-center py-[10px] px-[10px] gap-[20px];
+    @apply h-fit vsm:min-h-[146px] rounded-[30px] bg-[#0d0914] border border-[#6850FF] flex flex-col vsm:flex-row  items-center py-[10px] px-[10px] gap-[20px];
   }
   .features .feature .text1 {
-    @apply mb-[2px] text-[30px] font-bold font-Rajdhani;
+    @apply mb-[2px] text-[30px] font-bold text-center vsm:text-left font-Rajdhani;
   }
   .features .feature .text2 {
-    @apply text-[#969EB2] leading-[26px] font-Poppins;
+    @apply text-[#969EB2] leading-[26px] text-center vsm:text-left font-Poppins;
   }
 
   .roadmap .item {
@@ -53,7 +53,7 @@
   }
 
   .howto .item {
-    @apply rounded-[20px] py-[20px] px-[10px] bg-[#00000047];
+    @apply rounded-[20px] py-[20px] px-[20px] vsm:px-[10px] bg-[#00000047];
   }
   .howto .item > div {
     @apply flex items-center gap-[5px];

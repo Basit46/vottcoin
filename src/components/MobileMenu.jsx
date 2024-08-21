@@ -5,7 +5,7 @@ const MobileMenu = ({ open, setOpen }) => {
   return (
     <div
       className={`${
-        open ? "top-[60px] vsm:top-[80px]" : "top-[-100vh] hidden"
+        open ? "top-[70px] vsm:top-[80px]" : "top-[-100vh] hidden"
       } mobile-menu flex xl:hidden duration-500 fixed z-[9] top-[80px] bg-[#0d0914] w-screen h-fit text-[20px] py-[40px] flex-col items-center gap-[10px] font-[600] font-Rajdhani`}
     >
       <Link

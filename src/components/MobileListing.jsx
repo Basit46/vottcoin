@@ -15,11 +15,11 @@ const MobileListing = () => {
       id="exchange"
       className="block lg:hidden relative mt-[100px] px-[20px] xmd:px-[60px] w-full"
     >
-      <h1 className="text-[45px] 2xl:text-[50px] font-Rajdhani font-bold text-center">
+      <h1 className="text-[40px] vsm:text-[45px] 2xl:text-[50px] font-Rajdhani font-bold text-center leading-[1.1]">
         Exchange Listings
       </h1>
 
-      <div className="relative bg-[#0D0914] overflow-hidden border-[1px] border-[#FFF960] rounded-[20px] w-fit mx-auto flex flex-col py-[20px] px-[20px]">
+      <div className="mt-[20px] relative bg-[#0D0914] overflow-hidden border-[1px] border-[#FFF960] rounded-[20px] w-fit mx-auto flex flex-col py-[20px] px-[20px]">
         <p className="relative z-[2] text-center text-[20px] 2xl:text-[22px] font-[500] font-MavenPro text-[#969EB2] leading-[1.4] 2xl:leading-[36px]">
           Tap to Vote is set to be listed on some of the top exchanges in the
           crypto world, including MEXC, Bybit, Coinstore, and KuCoin. This means
