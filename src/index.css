@@ -24,7 +24,7 @@
   }
 
   .features .feature {
-    @apply min-h-[146px] rounded-[30px] border border-[#6850FF] flex items-center py-[10px] px-[10px] gap-[20px];
+    @apply min-h-[146px] rounded-[30px] bg-[#0d0914] border border-[#6850FF] flex items-center py-[10px] px-[10px] gap-[20px];
   }
   .features .feature .text1 {
     @apply mb-[2px] text-[30px] font-bold font-Rajdhani;
