@@ -2,7 +2,10 @@ import React from "react";
 
 const Roadmap = () => {
   return (
-    <div className="roadmap w-full h-fit mt-[50px] overflow-hidden">
+    <div
+      id="roadmap"
+      className="roadmap w-full h-fit mt-[50px] overflow-hidden"
+    >
       <div className="main w-[45%] mx-auto h-[100px] bg-[#6850FF] grid place-items-center">
         <p className="text-[60px] font-Rajdhani font-bold">Roadmap</p>
       </div>

@@ -8,7 +8,10 @@ import img from "../assets/featuresImg.png";
 
 const Features = () => {
   return (
-    <div className="features w-full h-fit mt-[50px] overflow-hidden">
+    <div
+      id="features"
+      className="features w-full h-fit mt-[50px] overflow-hidden"
+    >
       <h1 className="text-center text-[60px] font-Rajdhani font-[700]">
         Features
       </h1>

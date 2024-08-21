@@ -3,7 +3,7 @@ import tokenChart from "../assets/token.png";
 
 const Tokenomics = () => {
   return (
-    <div className="token w-full h-fit mt-[50px] overflow-hidden">
+    <div id="token" className="token w-full h-fit mt-[50px] overflow-hidden">
       <h1 className="text-center text-[60px] font-Rajdhani font-[700]">
         Tokenomics
       </h1>

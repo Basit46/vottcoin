@@ -9,7 +9,7 @@ import logo4 from "../assets/logo4.png";
 
 const Listing = () => {
   return (
-    <div className="relative mt-[200px] px-[60px] w-full">
+    <div id="exchange" className="relative mt-[200px] px-[60px] w-full">
       <img className="mx-auto" src={bg} alt="background" />
 
       <div className="absolute z-[2] top-[-50px] left-1/2 -translate-x-1/2 w-fit mx-auto flex flex-col">

@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer components {
+  nav a {
+    @apply cursor-pointer;
+  }
   .hero h1 {
     @apply clip-text;
     background: linear-gradient(91.3deg, #ff5937 26.13%, #ffd837 69.85%);

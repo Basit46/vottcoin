@@ -11,12 +11,24 @@ const Navbar = () => {
       </div>
 
       <div className="font-[600] font-Rajdhani gap-[30px] flex items-center">
-        <Link to="Hero">HOME</Link>
-        <Link to="Hero">Features</Link>
-        <Link to="Hero">Tokenomics</Link>
-        <Link to="Hero">Roadmap</Link>
-        <Link to="Hero">Exchange Listings</Link>
-        <Link to="Hero">CONTACT</Link>
+        <Link to="hero" smooth={true} offset={50} duration={500}>
+          HOME
+        </Link>
+        <Link to="features" smooth={true} offset={50} duration={500}>
+          Features
+        </Link>
+        <Link to="token" smooth={true} offset={50} duration={500}>
+          Tokenomics
+        </Link>
+        <Link to="roadmap" smooth={true} offset={50} duration={500}>
+          Roadmap
+        </Link>
+        <Link to="exchange" smooth={true} offset={50} duration={500}>
+          Exchange Listings
+        </Link>
+        <Link to="contact" smooth={true} offset={50} duration={500}>
+          CONTACT
+        </Link>
       </div>
 
       <div className="flex gap-[20px] items-center">

@@ -6,7 +6,10 @@ import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#6850FF] h-[613px] w-full mt-[80px] pb-[30px]">
+    <footer
+      id="contact"
+      className="bg-[#6850FF] h-[613px] w-full mt-[80px] pb-[30px]"
+    >
       <div className="relative h-full w-full bg-black flex flex-col items-center justify-center">
         <div className="clip1 absolute top-0 left-1/2 -translate-x-1/2 bg-[#6850FF] w-[400px] h-[100px] grid place-items-center">
           <p className="text-[80px] font-Boogaloo leading-none">Vottcoin</p>
@@ -18,12 +21,60 @@ const Footer = () => {
 
         <div className="w-[80%] flex flex-col items-center">
           <div className="font-[600] font-Rajdhani gap-[30px] flex items-center uppercase">
-            <Link to="Hero">HOME</Link>
-            <Link to="Hero">Features</Link>
-            <Link to="Hero">Tokenomics</Link>
-            <Link to="Hero">Roadmap</Link>
-            <Link to="Hero">Exchange Listings</Link>
-            <Link to="Hero">CONTACT</Link>
+            <Link
+              className="cursor-pointer"
+              to="hero"
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              HOME
+            </Link>
+            <Link
+              className="cursor-pointer"
+              to="features"
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Features
+            </Link>
+            <Link
+              className="cursor-pointer"
+              to="token"
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Tokenomics
+            </Link>
+            <Link
+              className="cursor-pointer"
+              to="roadmap"
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Roadmap
+            </Link>
+            <Link
+              className="cursor-pointer"
+              to="exchange"
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Exchange Listings
+            </Link>
+            <Link
+              className="cursor-pointer"
+              to="contact"
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              CONTACT
+            </Link>
           </div>
 
           <div className="mt-[50px] w-full border-y-[3px] border-[#0F1C23] py-[20px] flex justify-between items-center">
