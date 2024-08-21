@@ -16,7 +16,7 @@ function App() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="max-w-[1900px] mx-auto overflow-x-hidden">
+    <div className="max-w-[1900px] mx-auto w-full h-fit overflow-hidden">
       <Navbar open={open} setOpen={setOpen} />
       <MobileMenu open={open} setOpen={setOpen} />
       <Hero />

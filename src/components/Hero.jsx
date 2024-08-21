@@ -13,7 +13,7 @@ import small8 from "../assets/small (8).png";
 
 const Hero = () => {
   return (
-    <div id="hero" className="hero relative h-fit overflow-hidden">
+    <div id="hero" className="hero relative z-[2] h-fit overflow-hidden">
       <div className="absolute top-[20%] vsm:top-[10%] xl:top-[5%] left-1/2 -translate-x-1/2 flex justify-center">
         <img src={img1} alt="kamala" />
         <img
