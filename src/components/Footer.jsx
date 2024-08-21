@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
 import linkBg from "../assets/linkBg.svg";
-import { FaFacebookF, FaPlay } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaPlay,
+  FaTelegram,
+  FaTelegramPlane,
+} from "react-icons/fa";
 import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
@@ -103,15 +108,7 @@ const Footer = () => {
                 Join <span className="text-[#6850FF]">Vottcoin</span> Community
               </p>
 
-              <div className="flex gap-[10px]">
-                <a
-                  href="https://x.com/VoteCoin00"
-                  target="blank"
-                  className="size-[46px] relative grid place-items-center"
-                >
-                  <img className="size-full" src={linkBg} alt="linkBg" />
-                  <FaFacebookF className="absolute text-[24px]" />
-                </a>
+              <div className="flex gap-[10px] justify-end">
                 <a
                   href="https://x.com/VoteCoin00"
                   target="blank"
@@ -121,28 +118,12 @@ const Footer = () => {
                   <FaXTwitter className="absolute text-[24px]" />
                 </a>
                 <a
-                  href="https://x.com/VoteCoin00"
+                  href="https://t.me/vottecoin"
                   target="blank"
                   className="size-[46px] relative grid place-items-center"
                 >
                   <img className="size-full" src={linkBg} alt="linkBg" />
-                  <FaInstagram className="absolute text-[24px]" />
-                </a>
-                <a
-                  href="https://x.com/VoteCoin00"
-                  target="blank"
-                  className="size-[46px] relative grid place-items-center"
-                >
-                  <img className="size-full" src={linkBg} alt="linkBg" />
-                  <FaLinkedin className="absolute text-[24px]" />
-                </a>
-                <a
-                  href="https://x.com/VoteCoin00"
-                  target="blank"
-                  className="size-[46px] relative grid place-items-center"
-                >
-                  <img className="size-full" src={linkBg} alt="linkBg" />
-                  <FaPlay className="absolute text-[24px]" />
+                  <FaTelegramPlane className="absolute text-[24px]" />
                 </a>
               </div>
             </div>

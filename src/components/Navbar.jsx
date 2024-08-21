@@ -5,13 +5,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = ({ open, setOpen }) => {
   return (
-    <nav className="fixed top-0 z-[10] max-w-[1900px] mx-auto w-full bg-[#0d0914] flex justify-between items-center pr-[40px] 2xl:pr-[100px]">
+    <nav className="fixed top-0 z-[10] max-w-[1900px] mx-auto w-full bg-[#0d0914] flex justify-between items-center">
       <div className="clip-side w-[55%] md:w-[40%] lg:w-[25%] 2xl:w-[410px] h-[80px] 2xl:h-[100px] bg-[#6850FF] flex justify-center gap-[10px] items-center">
         <img className="w-[52px]" src={logo} alt="Vottcoin" />
         <h1 className="text-[44px] font-Boogaloo">Vottcoin</h1>
       </div>
 
-      <div className="hidden font-[600] font-Rajdhani gap-[30px] xl:flex items-center">
+      <div className="hidden font-[600] font-Rajdhani gap-[30px] xl:flex flex-1 justify-center items-center">
         <Link to="hero" smooth={true} offset={50} duration={500}>
           HOME
         </Link>
@@ -32,7 +32,7 @@ const Navbar = ({ open, setOpen }) => {
         </Link>
       </div>
 
-      <div className="hidden xl:flex gap-[20px] items-center">
+      <div className="hidden gap-[20px] items-center">
         <button className="btn1 w-[120px] h-[44px] text-white rounded-[7.5px] text-[24px] font-Boogaloo">
           NFT
         </button>
@@ -43,7 +43,7 @@ const Navbar = ({ open, setOpen }) => {
 
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="xl:hidden text-[25px]"
+        className="pr-[40px] xl:hidden text-[25px]"
       >
         {open ? <FaTimes className="text-[red]" /> : <FaBars />}
       </button>

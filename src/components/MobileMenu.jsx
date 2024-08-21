@@ -65,13 +65,13 @@ const MobileMenu = ({ open, setOpen }) => {
 
       <button
         onClick={() => setOpen(false)}
-        className="btn1 w-[120px] h-[44px] text-white rounded-[7.5px] text-[24px] font-Boogaloo"
+        className="hidden btn1 w-[120px] h-[44px] text-white rounded-[7.5px] text-[24px] font-Boogaloo"
       >
         NFT
       </button>
       <button
         onClick={() => setOpen(false)}
-        className="btn2 w-[184px] h-[44px] text-white rounded-[7.5px] text-[24px] font-Boogaloo"
+        className="hidden btn2 w-[184px] h-[44px] text-white rounded-[7.5px] text-[24px] font-Boogaloo"
       >
         Whitepaper
       </button>
