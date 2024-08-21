@@ -10,6 +10,7 @@ import FAQs from "./components/FAQs";
 import Listing from "./components/Listing";
 import Footer from "./components/Footer";
 import MobileMenu from "./components/MobileMenu";
+import MobileListing from "./components/MobileListing";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -26,6 +27,7 @@ function App() {
       <HowToBuy />
       <FAQs />
       <Listing />
+      <MobileListing />
       <Footer />
     </div>
   );

@@ -5,13 +5,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = ({ open, setOpen }) => {
   return (
-    <nav className="fixed top-0 z-[10] max-w-[1900px] mx-auto w-full bg-[#0d0914] flex justify-between items-center">
-      <div className="clip-side w-[55%] md:w-[40%] lg:w-[25%] 2xl:w-[410px] h-[80px] 2xl:h-[100px] bg-[#6850FF] flex justify-center gap-[10px] items-center">
+    <nav className="fixed top-0 z-[10]  max-w-[1900px] h-[80px] 2xl:h-[100px] mx-auto w-full bg-[#0d0914] flex justify-end xl:justify-center items-center">
+      <div className="absolute left-0 clip-side w-[55%] md:w-[40%] lg:w-[25%] 2xl:w-[410px] h-[80px] 2xl:h-[100px] bg-[#6850FF] flex justify-center gap-[10px] items-center">
         <img className="w-[52px]" src={logo} alt="Vottcoin" />
         <h1 className="text-[44px] font-Boogaloo">Vottcoin</h1>
       </div>
 
-      <div className="hidden font-[600] font-Rajdhani gap-[30px] xl:flex flex-1 justify-center items-center">
+      <div className="hidden font-[600] font-Rajdhani gap-[30px] xl:flex  items-center">
         <Link to="hero" smooth={true} offset={50} duration={500}>
           HOME
         </Link>

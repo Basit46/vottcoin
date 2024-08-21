@@ -6,7 +6,7 @@ const FAQs = () => {
 
   return (
     <div className="mt-[100px] pb-[50px]">
-      <div className="w-[60%] mx-auto">
+      <div className="w-[80%] md:w-[60%] mx-auto">
         <h1 className="text-[60px] font-Rajdhani font-bold">FAQs</h1>
         <p className="text-[#FFFFFF66] text-[20px] font-Poppins">
           General Questions:
@@ -70,7 +70,9 @@ const Question = ({ id, question, open, setOpen }) => {
         onClick={() => setOpen(open == id ? "" : id)}
         className="pb-[10px] flex justify-between items-center cursor-pointer"
       >
-        <p className="text-[30px] font-Rajdhani font-[600]">{question}</p>
+        <p className="text-[20px] md:text-[30px] font-Rajdhani font-[600]">
+          {question}
+        </p>
         <Arrow className={`${open == id && "rotate-[180deg]"} text-[20px]`} />
       </div>
       <div className={`${open == id ? "h-auto" : "h-0"} overflow-hidden`}>

@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="bg-[#6850FF] h-[613px] w-full mt-[80px] pb-[30px]"
+      className="bg-[#6850FF] h-[650px] md:h-[613px] w-full mt-[80px] pb-[30px]"
     >
       <div className="relative h-full w-full bg-black flex flex-col items-center justify-center">
         <div className="clip1 absolute top-0 left-1/2 -translate-x-1/2 bg-[#6850FF] w-[400px] h-[100px] grid place-items-center">
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
 
         <div className="w-[80%] flex flex-col items-center">
-          <div className="font-[600] font-Rajdhani gap-[30px] flex items-center uppercase">
+          <div className="px-[20px] font-[600] font-Rajdhani gap-x-[30px] gap-[10px] flex flex-wrap justify-center items-center uppercase">
             <Link
               className="cursor-pointer"
               to="hero"
@@ -82,12 +82,14 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="mt-[50px] w-full border-y-[3px] border-[#0F1C23] py-[20px] flex justify-between items-center">
+          <div className="mt-[50px] w-full border-y-[3px] border-[#0F1C23] py-[20px] flex flex-col gap-[20px] md:gap-0 md:flex-row justify-between items-center">
             <div>
               <p className="text-[24px] font-Rajdhani font-[600]">
                 Office <span className="text-[#6850FF]">Location:</span>
               </p>
-              <p className="font-Poppins text-[#969EB2]">dubai</p>
+              <p className="font-Poppins text-[#969EB2] text-center md:text-left">
+                dubai
+              </p>
             </div>
 
             <div>
@@ -108,7 +110,7 @@ const Footer = () => {
                 Join <span className="text-[#6850FF]">Vottcoin</span> Community
               </p>
 
-              <div className="flex gap-[10px] justify-end">
+              <div className="flex gap-[10px] justify-center md:justify-end">
                 <a
                   href="https://x.com/VoteCoin00"
                   target="blank"
