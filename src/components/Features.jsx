@@ -5,14 +5,49 @@ import icon3 from "../assets/icon3.png";
 import icon4 from "../assets/icon4.png";
 import icon5 from "../assets/icon5.png";
 import img from "../assets/featuresImg.png";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Features = () => {
+  const featuresRef = useRef();
+  useGSAP(
+    () => {
+      gsap.from(".anim1", {
+        opacity: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: featuresRef.current,
+          start: "top 90%",
+        },
+      });
+
+      const fitems = gsap.utils.toArray(".features .feature");
+
+      fitems.forEach((item, i) => {
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: "top 90%",
+          },
+          y: 50,
+          opacity: 0,
+        });
+      });
+    },
+    { scope: ".features" }
+  );
+
   return (
     <div
+      ref={featuresRef}
       id="features"
       className="features w-full h-fit mt-[100px] overflow-hidden"
     >
-      <h1 className="text-center text-[60px] font-Rajdhani font-[700]">
+      <h1 className="anim1 text-center text-[60px] font-Rajdhani font-[700]">
         Features
       </h1>
 

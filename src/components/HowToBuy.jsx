@@ -1,14 +1,56 @@
 import React from "react";
 import voteImg from "../assets/voteImg.png";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const HowToBuy = () => {
+  const howRef = useRef();
+  useGSAP(
+    () => {
+      gsap.from(".anim1", {
+        opacity: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: howRef.current,
+          start: "top 80%",
+        },
+      });
+      gsap.from(".anim2", {
+        opacity: 0,
+        y: 20,
+        scrollTrigger: {
+          trigger: howRef.current,
+          start: "top 80%",
+        },
+      });
+
+      const howitems = gsap.utils.toArray(".howto .item");
+
+      howitems.forEach((item, i) => {
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: "top 80%",
+          },
+          y: 50,
+          opacity: 0,
+        });
+      });
+    },
+    { scope: ".howto" }
+  );
+
   return (
-    <div className="howto w-full h-fit mt-[100px] overflow-hidden">
-      <h1 className="text-center text-[60px] font-Rajdhani font-bold leading-none">
+    <div ref={howRef} className="howto w-full h-fit mt-[100px] overflow-hidden">
+      <h1 className="anim1 text-center text-[60px] font-Rajdhani font-bold leading-none">
         How To Buy
       </h1>
 
-      <p className="w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[20px] vsm:text-[24px] md:text-[28px] font-[500] leading-[1.4] md:leading-[36px] font-MavenPro">
+      <p className="anim2 w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[20px] vsm:text-[24px] md:text-[28px] font-[500] leading-[1.4] md:leading-[36px] font-MavenPro">
         Welcome to the VottCoin revolution! Here’s a simple guide to help you
         get your hands on VottCoin tokens and start participating in the most
         exciting election game in the crypto world.

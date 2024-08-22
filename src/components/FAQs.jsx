@@ -1,14 +1,56 @@
 import React, { useState } from "react";
 import { IoIosArrowDown as Arrow } from "react-icons/io";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const FAQs = () => {
   const [open, setOpen] = useState("");
 
+  const faqRef = useRef();
+  useGSAP(
+    () => {
+      gsap.from(".anim1", {
+        opacity: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: faqRef.current,
+          start: "top 80%",
+        },
+      });
+      gsap.from(".anim2", {
+        opacity: 0,
+        y: 20,
+        scrollTrigger: {
+          trigger: faqRef.current,
+          start: "top 80%",
+        },
+      });
+
+      const faitems = gsap.utils.toArray(".faq .item");
+
+      faitems.forEach((item, i) => {
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: "top 80%",
+          },
+          y: 50,
+          opacity: 0,
+        });
+      });
+    },
+    { scope: ".faq" }
+  );
+
   return (
-    <div className="mt-[100px] pb-[50px]">
+    <div ref={faqRef} className="faq mt-[100px] pb-[50px]">
       <div className="w-[80%] md:w-[60%] mx-auto">
-        <h1 className="text-[60px] font-Rajdhani font-bold">FAQs</h1>
-        <p className="text-[#FFFFFF66] text-[20px] font-Poppins">
+        <h1 className="anim1 text-[60px] font-Rajdhani font-bold">FAQs</h1>
+        <p className="anim2 text-[#FFFFFF66] text-[20px] font-Poppins">
           General Questions:
         </p>
 
@@ -65,7 +107,7 @@ export default FAQs;
 
 const Question = ({ id, question, open, setOpen }) => {
   return (
-    <div className="w-full pb-[10px] border-b border-[#FFFFFF1A]">
+    <div className="item w-full pb-[10px] border-b border-[#FFFFFF1A]">
       <div
         onClick={() => setOpen(open == id ? "" : id)}
         className="pb-[10px] flex justify-between items-center cursor-pointer"

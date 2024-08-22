@@ -1,14 +1,60 @@
 import React from "react";
 import rd1 from "../assets/rd1.png";
 import rd2 from "../assets/rd2.png";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Roadmap = () => {
+  const roadmapRef = useRef();
+  useGSAP(
+    () => {
+      gsap.from(".anim1", {
+        opacity: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: roadmapRef.current,
+          start: "top 90%",
+        },
+      });
+      gsap.from(".anim2", {
+        opacity: 0,
+        y: 20,
+        scrollTrigger: {
+          trigger: roadmapRef.current,
+          start: "top 90%",
+        },
+      });
+
+      const ritems = gsap.utils.toArray(".roadmap .item");
+
+      ritems.forEach((item, i) => {
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: "top 90%",
+          },
+          y: 50,
+          opacity: 0,
+        });
+      });
+    },
+    { scope: ".roadmap" }
+  );
+
   return (
-    <div id="roadmap" className="roadmap relative w-full h-fit mt-[100px]">
-      <div className="relative z-[2] main w-[90%] vsm:w-[80%] md:w-[45%] mx-auto h-[80px] vsm:h-[100px] bg-[#6850FF] grid place-items-center">
+    <div
+      ref={roadmapRef}
+      id="roadmap"
+      className="roadmap relative w-full h-fit mt-[100px]"
+    >
+      <div className="anim1 relative z-[2] main w-[90%] vsm:w-[80%] md:w-[45%] mx-auto h-[80px] vsm:h-[100px] bg-[#6850FF] grid place-items-center">
         <p className="text-[60px] font-Rajdhani font-bold">Roadmap</p>
       </div>
-      <p className="relative z-[2] w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[20px] vsm:text-[28px] font-[500] leading-[1.4] vsm:leading-[36px] font-MavenPro">
+      <p className="anim2 relative z-[2] w-[80%] md:w-[70%] mt-[20px] mx-auto text-center text-[20px] vsm:text-[28px] font-[500] leading-[1.4] vsm:leading-[36px] font-MavenPro">
         Discover the exciting journey that VottCoin is embarking on. Our roadmap
         outlines key milestones, developments, and events that will take our
         meme-coin election game to the next level.

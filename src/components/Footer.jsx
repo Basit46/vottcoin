@@ -40,7 +40,7 @@ const Footer = () => {
               className="cursor-pointer"
               to="features"
               smooth={true}
-              offset={50}
+              offset={-100}
               duration={500}
             >
               Features
@@ -49,7 +49,7 @@ const Footer = () => {
               className="cursor-pointer"
               to="token"
               smooth={true}
-              offset={50}
+              offset={-100}
               duration={500}
             >
               Tokenomics
@@ -58,7 +58,7 @@ const Footer = () => {
               className="cursor-pointer"
               to="roadmap"
               smooth={true}
-              offset={50}
+              offset={-100}
               duration={500}
             >
               Roadmap
@@ -67,7 +67,7 @@ const Footer = () => {
               className="cursor-pointer"
               to="exchange"
               smooth={true}
-              offset={50}
+              offset={-260}
               duration={500}
             >
               Exchange Listings
@@ -76,7 +76,7 @@ const Footer = () => {
               className="cursor-pointer"
               to="contact"
               smooth={true}
-              offset={50}
+              offset={-100}
               duration={500}
             >
               CONTACT

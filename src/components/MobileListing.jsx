@@ -50,14 +50,6 @@ const MobileListing = () => {
           alt="ellipse"
         />
       </div>
-
-      <div className="mt-[20px] flex gap-[10px] justify-center">
-        <div className="size-[10px] bg-[#FFBE18] rounded-full" />
-        <div className="size-[10px] bg-[#FFBE18] rounded-full" />
-        <div className="size-[10px] bg-[#FFBE18] rounded-full" />
-        <div className="size-[10px] bg-[#FFBE18] rounded-full" />
-        <div className="size-[10px] bg-[#FFBE18] rounded-full" />
-      </div>
     </div>
   );
 };

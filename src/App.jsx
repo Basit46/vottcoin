@@ -27,7 +27,7 @@ function App() {
       <HowToBuy />
       <FAQs />
       <Listing />
-      <MobileListing />
+      {/* <MobileListing /> */}
       <Footer />
     </div>
   );

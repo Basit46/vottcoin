@@ -15,19 +15,19 @@ const Navbar = ({ open, setOpen }) => {
         <Link to="hero" smooth={true} offset={50} duration={500}>
           HOME
         </Link>
-        <Link to="features" smooth={true} offset={50} duration={500}>
+        <Link to="features" smooth={true} offset={-100} duration={500}>
           Features
         </Link>
-        <Link to="token" smooth={true} offset={50} duration={500}>
+        <Link to="token" smooth={true} offset={-100} duration={500}>
           Tokenomics
         </Link>
-        <Link to="roadmap" smooth={true} offset={50} duration={500}>
+        <Link to="roadmap" smooth={true} offset={-100} duration={500}>
           Roadmap
         </Link>
-        <Link to="exchange" smooth={true} offset={50} duration={500}>
+        <Link to="exchange" smooth={true} offset={-260} duration={500}>
           Exchange Listings
         </Link>
-        <Link to="contact" smooth={true} offset={50} duration={500}>
+        <Link to="contact" smooth={true} offset={-100} duration={500}>
           CONTACT
         </Link>
       </div>
