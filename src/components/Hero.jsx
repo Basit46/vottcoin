@@ -31,18 +31,18 @@ const Hero = () => {
     cssEase: "linear",
   };
 
-  useGSAP(
-    () => {
-      const htl = gsap.timeline();
-      htl
-        .from(".anim1", { opacity: 0, duration: 2 })
-        .from(".anim2", { opacity: 0, y: 20 }, "-=0.9")
-        .from(".anim3", { opacity: 0, y: 20 })
-        .from(".anim4", { opacity: 0, y: 20 })
-        .from(".anim5", { opacity: 0, y: 20 });
-    },
-    { scope: ".hero" }
-  );
+  // useGSAP(
+  //   () => {
+  //     const htl = gsap.timeline();
+  //     htl
+  //       .from(".anim1", { opacity: 0, duration: 2 })
+  //       .from(".anim2", { opacity: 0, y: 20 }, "-=0.9")
+  //       .from(".anim3", { opacity: 0, y: 20 })
+  //       .from(".anim4", { opacity: 0, y: 20 })
+  //       .from(".anim5", { opacity: 0, y: 20 });
+  //   },
+  //   { scope: ".hero" }
+  // );
 
   return (
     <div id="hero" className="hero relative z-[2] h-fit overflow-hidden">

@@ -20,6 +20,11 @@ function App() {
       <Navbar open={open} setOpen={setOpen} />
       <MobileMenu open={open} setOpen={setOpen} />
       <Hero />
+      <iframe
+        className="w-[90%] sm:w-[500px] h-[1400px] sm:h-[1110px] mx-auto my-[30px]"
+        src="https://vottcoin-widget.vercel.app/"
+        frameborder="0"
+      ></iframe>
       <About />
       <Features />
       <Tokenomics />
@@ -27,7 +32,7 @@ function App() {
       <HowToBuy />
       <FAQs />
       <Listing />
-      {/* <MobileListing /> */}
+
       <Footer />
     </div>
   );
