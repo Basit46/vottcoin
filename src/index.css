@@ -11,7 +11,7 @@
   .mobile-menu a {
     @apply cursor-pointer;
   }
-  .hero h1 {
+  .hero .main .h1 {
     @apply clip-text;
     background: linear-gradient(91.3deg, #ff5937 26.13%, #ffd837 69.85%);
     -webkit-background-clip: text;
@@ -100,7 +100,7 @@ nav .btn2,
   background-position: center;
 }
 
-.hero button {
+.hero .main button {
   background: linear-gradient(152.2deg, #fff960 -15.84%, #ff8c22 89.58%);
   border: 1px solid;
   border-image-source: linear-gradient(180deg, #7d7d7d 0%, #ffffff 100%);

@@ -14,6 +14,7 @@ import { useGSAP } from "@gsap/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Widget from "../../public/my-widget.es";
 
 gsap.registerPlugin(useGSAP);
 
@@ -62,8 +63,8 @@ const Hero = () => {
             />
           </div>
 
-          <div className="pt-[65%] vsm:pt-[40%] xmd:pt-[30%] relative z-[2] flex flex-col items-center">
-            <h1 className="anim2 text-[70px] vsm:text-[100px] lg:text-[174px] text-center leading-[1.0] font-Knewave pr-[20px]">
+          <div className="main pt-[65%] vsm:pt-[40%] xmd:pt-[30%] relative z-[2] flex flex-col items-center">
+            <h1 className="h1 anim2 text-[70px] vsm:text-[100px] lg:text-[174px] text-center leading-[1.0] font-Knewave pr-[20px]">
               VOTTCOIN
             </h1>
             <p className="anim3 mt-[10px] text-[28px] vsm:text-[44px] font-Boogaloo text-center leading-[1.1]">
@@ -78,11 +79,9 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* <iframe
-          className="hidden xl:block w-[90%] sm:w-[500px] h-[1480px] vsm:h-[1400px] sm:h-[1400px] 2xl:h-[1150px]"
-          src="https://vottcoin-widget.vercel.app/"
-          frameborder="0"
-        ></iframe> */}
+        <div className="hidden xl:block my-[50px] w-[90%] sm:w-fit mx-auto">
+          <Widget />
+        </div>
       </div>
 
       <div className="mt-[50px] sm:mt-[20px] relative z-[3] w-full bg-[#3C2974] pb-[10px]">
