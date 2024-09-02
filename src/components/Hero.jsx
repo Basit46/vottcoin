@@ -51,7 +51,7 @@ const Hero = () => {
       id="hero"
       className="hero relative z-[2] h-fit overflow-hidden"
     >
-      <div className="px-[20px] flex justify-center pt-[60px] sm:pt-[120px] gap-[30px] 2xl:gap-[100px]">
+      <div className="px-[20px] flex justify-center pt-[10px] vsm:pt-[60px] sm:pt-[120px] gap-[30px] 2xl:gap-[100px]">
         <div className="relative">
           <div className="anim1 absolute top-[20%] vsm:top-[10%] xl:top-[5%] left-1/2 -translate-x-1/2 flex justify-center">
             <img src={img1} alt="kamala" />
@@ -69,7 +69,7 @@ const Hero = () => {
             <p className="anim3 mt-[10px] text-[28px] vsm:text-[44px] font-Boogaloo text-center leading-[1.1]">
               The Ultimate Meme-Coin <br className="sm:hidden" /> Election Game!
             </p>
-            <button className="anim4 mt-[20px] mb-[50px] w-[80%] vsm:w-[336px] py-[5px] text-[24px] font-Poppins font-[900] text-[#0D0914] leading-[1.1] rounded-[42px]">
+            <button className="anim4 mt-[20px] mb-[20px] sm:mb-[50px] w-[80%] vsm:w-[336px] py-[5px] text-[24px] font-Poppins font-[900] text-[#0D0914] leading-[1.1] rounded-[42px]">
               Join the <br /> Revolution
             </button>
             <p className="anim5 text-center text-[#7D7D7D] font-[900] text-[20px] font-Poppins tracking-[8px]">
@@ -85,7 +85,7 @@ const Hero = () => {
         ></iframe>
       </div>
 
-      <div className="mt-[20px] relative z-[3] w-full bg-[#3C2974] pb-[10px]">
+      <div className="mt-[50px] sm:mt-[20px] relative z-[3] w-full bg-[#3C2974] pb-[10px]">
         <Slider {...settings} className="">
           <img
             className="w-[14%] lg:w-[150px] 2xl:w-[201px]"
