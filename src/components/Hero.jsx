@@ -78,11 +78,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <iframe
+        {/* <iframe
           className="hidden xl:block w-[90%] sm:w-[500px] h-[1480px] vsm:h-[1400px] sm:h-[1400px] 2xl:h-[1150px]"
           src="https://vottcoin-widget.vercel.app/"
           frameborder="0"
-        ></iframe>
+        ></iframe> */}
       </div>
 
       <div className="mt-[50px] sm:mt-[20px] relative z-[3] w-full bg-[#3C2974] pb-[10px]">

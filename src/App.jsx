@@ -10,20 +10,19 @@ import FAQs from "./components/FAQs";
 import Listing from "./components/Listing";
 import Footer from "./components/Footer";
 import MobileMenu from "./components/MobileMenu";
+import Widget from "../public/dist/my-widget.es";
 
 function App() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="max-w-[3000px] mx-auto w-full h-fit overflow-hidden">
+    <div className="widget max-w-[3000px] mx-auto w-full h-fit overflow-hidden">
       <Navbar open={open} setOpen={setOpen} />
       <MobileMenu open={open} setOpen={setOpen} />
       <Hero />
-      <iframe
-        className="xl:hidden w-[90%] sm:w-[500px] h-[1480px] vsm:h-[1400px] sm:h-[1110px] mx-auto my-[30px]"
-        src="https://vottcoin-widget.vercel.app/"
-        frameborder="0"
-      ></iframe>
+      <div className="my-[50px]">
+        <Widget />
+      </div>
       <About />
       <Features />
       <Tokenomics />
