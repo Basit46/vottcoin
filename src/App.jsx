@@ -20,7 +20,7 @@ function App() {
       <Navbar open={open} setOpen={setOpen} />
       <MobileMenu open={open} setOpen={setOpen} />
       <Hero />
-      <div className="my-[50px]">
+      <div className="my-[50px] w-[90%] mx-auto">
         <Widget />
       </div>
       <About />
