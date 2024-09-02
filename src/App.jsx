@@ -10,7 +10,7 @@ import FAQs from "./components/FAQs";
 import Listing from "./components/Listing";
 import Footer from "./components/Footer";
 import MobileMenu from "./components/MobileMenu";
-import Widget from "../public/dist/my-widget.es";
+import Widget from "../public/my-widget.es";
 
 function App() {
   const [open, setOpen] = useState(false);
