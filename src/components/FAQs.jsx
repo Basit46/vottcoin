@@ -43,7 +43,7 @@ const FAQs = () => {
         });
       });
     },
-    { scope: ".faq" }
+    { scope: faqRef }
   );
 
   return (

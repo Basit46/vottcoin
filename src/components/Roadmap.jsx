@@ -42,7 +42,7 @@ const Roadmap = () => {
         });
       });
     },
-    { scope: ".roadmap" }
+    { scope: roadmapRef }
   );
 
   return (

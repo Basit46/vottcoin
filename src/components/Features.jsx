@@ -38,7 +38,7 @@ const Features = () => {
         });
       });
     },
-    { scope: ".features" }
+    { scope: featuresRef }
   );
 
   return (

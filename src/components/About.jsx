@@ -20,7 +20,7 @@ const About = () => {
         .from(".anim1", { opacity: 0, duration: 1 })
         .from(".main", { opacity: 0, y: 50 }, "-=0.5");
     },
-    { scope: ".about" }
+    { scope: aboutRef }
   );
 
   return (

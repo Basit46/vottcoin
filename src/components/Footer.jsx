@@ -1,13 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
 import linkBg from "../assets/linkBg.svg";
-import {
-  FaFacebookF,
-  FaPlay,
-  FaTelegram,
-  FaTelegramPlane,
-} from "react-icons/fa";
-import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (

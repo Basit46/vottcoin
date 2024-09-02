@@ -41,7 +41,7 @@ const HowToBuy = () => {
         });
       });
     },
-    { scope: ".howto" }
+    { scope: howRef }
   );
 
   return (

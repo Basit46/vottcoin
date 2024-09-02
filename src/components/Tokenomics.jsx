@@ -33,7 +33,7 @@ const Tokenomics = () => {
         });
       });
     },
-    { scope: ".token" }
+    { scope: tokenRef }
   );
 
   return (
