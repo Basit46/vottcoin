@@ -51,7 +51,7 @@ const Hero = () => {
       id="hero"
       className="hero relative z-[2] h-fit overflow-hidden"
     >
-      <div className="px-[20px] flex justify-center pt-[120px] gap-[30px] 2xl:gap-[100px]">
+      <div className="px-[20px] flex justify-center pt-[60px] sm:pt-[120px] gap-[30px] 2xl:gap-[100px]">
         <div className="relative">
           <div className="anim1 absolute top-[20%] vsm:top-[10%] xl:top-[5%] left-1/2 -translate-x-1/2 flex justify-center">
             <img src={img1} alt="kamala" />
