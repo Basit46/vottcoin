@@ -159,6 +159,9 @@ footer .clip2 {
     flex-wrap: nowrap !important;
   }
 }
+.widget header .countdown {
+  gap: 10px;
+}
 
 @media only screen and (min-width: 600px) {
   .widget > div > div:nth-child(2) > div {
