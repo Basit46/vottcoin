@@ -79,7 +79,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden xl:block my-[50px] w-[90%] sm:w-fit">
+        <div className="widget-wrap hidden xl:block my-[50px] w-[90%] sm:w-fit">
           <Widget />
         </div>
       </div>

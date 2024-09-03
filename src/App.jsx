@@ -20,7 +20,7 @@ function App() {
       <Navbar open={open} setOpen={setOpen} />
       <MobileMenu open={open} setOpen={setOpen} />
       <Hero />
-      <div className="xl:hidden my-[50px] w-[90%] sm:w-fit mx-auto">
+      <div className="widget-wrap xl:hidden my-[50px] w-[90%] sm:w-fit mx-auto">
         <Widget />
       </div>
       <About />
