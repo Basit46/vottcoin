@@ -62,6 +62,14 @@ const MobileMenu = ({ open, setOpen }) => {
       >
         Contact
       </Link>
+      <a
+        href="https://t.me/vottcoinbot"
+        onClick={() => setOpen(false)}
+        target="blank"
+        className="telegram-btn w-[200px] py-[15px] text-[16px] font-Poppins font-[900] text-center text-[#0D0914] leading-[1.1] rounded-[42px]"
+      >
+        Join the Revolution
+      </a>
 
       <button
         onClick={() => setOpen(false)}

@@ -100,7 +100,8 @@ nav .btn2,
   background-position: center;
 }
 
-.hero .main button {
+.hero .main button,
+.telegram-btn {
   background: linear-gradient(152.2deg, #fff960 -15.84%, #ff8c22 89.58%);
   border: 1px solid;
   border-image-source: linear-gradient(180deg, #7d7d7d 0%, #ffffff 100%);

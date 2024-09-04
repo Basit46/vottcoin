@@ -70,10 +70,10 @@ const Hero = () => {
             <p className="anim3 mt-[10px] text-[28px] vsm:text-[44px] font-Boogaloo text-center leading-[1.1]">
               The Ultimate Meme-Coin <br className="sm:hidden" /> Election Game!
             </p>
-            <button className="anim4 mt-[20px] mb-[20px] sm:mb-[50px] w-[80%] vsm:w-[336px] py-[5px] text-[24px] font-Poppins font-[900] text-[#0D0914] leading-[1.1] rounded-[42px]">
+            {/* <button className="anim4 mt-[20px] mb-[10px] sm:mb-[50px] w-[80%] vsm:w-[336px] py-[5px] text-[24px] font-Poppins font-[900] text-[#0D0914] leading-[1.1] rounded-[42px]">
               Join the <br /> Revolution
-            </button>
-            <p className="anim5 text-center text-[#7D7D7D] font-[900] text-[20px] font-Poppins tracking-[8px]">
+            </button> */}
+            <p className="anim5 mt-[10px] text-center text-[#7D7D7D] font-[900] text-[20px] font-Poppins tracking-[8px]">
               Where Every Tap Counts!
             </p>
           </div>
