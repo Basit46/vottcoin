@@ -22,7 +22,7 @@ import {
 
 type InstructionNumber = 0 | 1 | 2 | 3;
 
-const transaction = async () => {
+export default async function transaction(new_per_token_price: number) {
   console.log("Update Token price");
 
   //phase1 (setup Transaction & send Transaction)
@@ -41,7 +41,7 @@ const transaction = async () => {
   console.log("sellerTokenAccountPubkey: ", sellerTokenAccountPubkey.toBase58());
   const instruction: InstructionNumber = 3;
 
-  const newPerTokenPrice = 0.0002 * LAMPORTS_PER_SOL;
+  const newPerTokenPrice = new_per_token_price * LAMPORTS_PER_SOL;
 
   const updateTokenPriceIx = new TransactionInstruction({
     programId: tokenSaleProgramId,
@@ -92,5 +92,3 @@ const transaction = async () => {
   //#phase2 end
 
 };
-
-transaction();

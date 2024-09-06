@@ -1,5 +1,6 @@
 import { PublicKey } from "@solana/web3.js";
 
+//@ts-expect-error missing types
 import * as BufferLayout from "buffer-layout";
 
 export const TokenSaleAccountLayout = BufferLayout.struct([
