@@ -5,6 +5,9 @@ import trump from "../assets/trump.svg";
 // import { logos } from "../assets/logos";
 import { useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import buyTokens from '../contract/buyToken'
+import { connection } from "../helper/constants";
+import { Transaction } from "@solana/web3.js";
 // import { useAccount } from "wagmi";
 // import { Custom } from "./Custom";
 // import { useDisconnect } from "wagmi";
@@ -35,6 +38,39 @@ const Center = () => {
   const handleInput = () => {
     inputRef.current.focus();
   };
+
+  const handleBuy = async () => {
+    try {
+      const buyTxix = await buyTokens(publicKey, inputAmount);
+
+      const {
+        context: { slot: minContextSlot },
+        value: { blockhash, lastValidBlockHeight },
+      } = await connection.getLatestBlockhashAndContext();
+
+      const transaction = new Transaction({
+        blockhash,
+        lastValidBlockHeight,
+        feePayer: publicKey,
+      });
+      transaction.add(buyTxix);
+
+      const signature = await sendTransaction(transaction, connection, {
+        minContextSlot,
+      });
+      console.log('info', 'Transaction sent:', signature);
+
+      await connection.confirmTransaction({
+        blockhash,
+        lastValidBlockHeight,
+        signature,
+      });
+      console.log('success', 'Transaction successful!', signature);
+    } catch (error) {
+      console.log('error', error);
+    }
+
+  }
 
   const [USDPrice, setUSDprice] = useState("1");
   const getCoinUSDprice = (coinId = "USD") => {
@@ -240,7 +276,7 @@ const Center = () => {
       <div className="mt-[40px] w-full">
         <p className="font-[500]">Buy $VOTTCOIN tokens now:</p>
         {connected ? (
-          <button className="mt-[10px] bg-[#39276F] relative w-full h-[40px] rounded-[1000px] flex items-center justify-center px-[20px]">
+          <button onClick={() => handleBuy()} className="mt-[10px] bg-[#39276F] relative w-full h-[40px] rounded-[1000px] flex items-center justify-center px-[20px]">
             <p className="font-MavenPro font-[500]">Buy $VOTTCOIN</p>
           </button>
         ) : (

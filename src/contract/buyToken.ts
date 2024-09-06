@@ -3,13 +3,11 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import {
-  clusterApiUrl,
-  Connection,
   PublicKey,
   SystemProgram,
-  Transaction,
   TransactionInstruction,
 } from "@solana/web3.js";
+import { connection } from '../helper/constants';
 import { createAccountInfo, checkAccountInitialized } from "./utils";
 import { getAssociatedTokenAddressSync, TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import { TokenSaleAccountLayoutInterface, TokenSaleAccountLayout } from "./account";
@@ -21,7 +19,6 @@ export default async function transaction(buyerPubkey: PublicKey, number_of_toke
   console.log("3. Buy Tokens");
   //phase1 (setup Transaction & send Transaction)
   console.log("Setup Buy Transaction");
-  const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
   const tokenSaleProgramId = new PublicKey(process.env.CUSTOM_PROGRAM_ID!);
 
   const tokenPubkey = new PublicKey(process.env.TOKEN_PUBKEY!);
@@ -61,8 +58,7 @@ export default async function transaction(buyerPubkey: PublicKey, number_of_toke
     data: Buffer.from(Uint8Array.of(instruction, ...new BN(number_of_tokens).toArray("le", 8))),
   });
 
-  const tx = new Transaction().add(buyTokenIx);
-  return tx;
+  return buyTokenIx;
 
   // await connection.sendTransaction(tx, [buyerKeypair], {
   //   skipPreflight: false,

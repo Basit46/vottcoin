@@ -1,10 +1,9 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
+import { connection } from '../helper/constants';
 import * as dotenv from "dotenv";
 dotenv.config();
 
 import {
-  clusterApiUrl,
-  Connection,
   Keypair,
   LAMPORTS_PER_SOL,
   PublicKey,
@@ -30,7 +29,6 @@ export default async function transaction() {
 
   //phase1 (setup Transaction & send Transaction)
   console.log("Setup Transaction");
-  const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
   const tokenSaleProgramId = new PublicKey(process.env.CUSTOM_PROGRAM_ID!);
   const sellerPubkey = new PublicKey(process.env.SELLER_PUBLIC_KEY!);
   const sellerPrivateKey = Uint8Array.from(JSON.parse(process.env.SELLER_PRIVATE_KEY!));
