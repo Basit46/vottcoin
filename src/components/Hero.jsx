@@ -14,7 +14,7 @@ import { useGSAP } from "@gsap/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Widget from "../../public/my-widget.es";
+import WalletWidget from "../widget/WalletWidget";
 
 gsap.registerPlugin(useGSAP);
 
@@ -80,7 +80,7 @@ const Hero = () => {
         </div>
 
         <div className="widget-wrap hidden xl:block my-[50px] w-[90%] sm:w-fit">
-          <Widget />
+          <WalletWidget />
         </div>
       </div>
 
