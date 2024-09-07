@@ -5,9 +5,9 @@ import trump from "../assets/trump.svg";
 // import { logos } from "../assets/logos";
 import { useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
-import buyTokens from '../contract/buyToken'
-import { connection } from "../helper/constants";
+import { connection, host } from "../helper/constants";
 import { Transaction } from "@solana/web3.js";
+import { Buffer } from "buffer";
 // import { useAccount } from "wagmi";
 // import { Custom } from "./Custom";
 // import { useDisconnect } from "wagmi";
@@ -30,7 +30,7 @@ const Center = () => {
   const { publicKey, sendTransaction, connected, disconnect } = useWallet();
 
   //A custom rate subject to change
-  const rate = 0.000531;
+  const rate = 0.00002125;
   const [inputAmount, setInputAmount] = useState("");
 
   //To focus on the input
@@ -41,20 +41,24 @@ const Center = () => {
 
   const handleBuy = async () => {
     try {
-      const buyTxix = await buyTokens(publicKey, inputAmount);
-
-      const {
-        context: { slot: minContextSlot },
-        value: { blockhash, lastValidBlockHeight },
-      } = await connection.getLatestBlockhashAndContext();
-
-      const transaction = new Transaction({
-        blockhash,
-        lastValidBlockHeight,
-        feePayer: publicKey,
+      const response = await fetch(`${host}/api/buy`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ buyerPubkey: publicKey, tokens: inputAmount / rate }),
       });
-      transaction.add(buyTxix);
 
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      const { base64Transaction, minContextSlot, blockhash, lastValidBlockHeight } = data;
+      const decodedTx = Buffer.from(base64Transaction, "base64");
+      const transaction = Transaction.from(decodedTx);
+
+      //Send Transaction
       const signature = await sendTransaction(transaction, connection, {
         minContextSlot,
       });
@@ -255,7 +259,7 @@ const Center = () => {
             <div className="mt-[10px] bg-[#39276F] relative w-full h-[40px] rounded-[1000px] flex items-center justify-between px-[20px]">
               <p className="text-white max-w-[80%] overflow-hidden">
                 {inputAmount != ""
-                  ? (parseFloat(inputAmount * USDPrice) / rate).toFixed(2)
+                  ? (parseFloat(inputAmount) / rate).toFixed(2)
                   : "0"}
               </p>
               {/* <input

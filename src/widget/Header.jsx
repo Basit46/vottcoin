@@ -25,7 +25,7 @@ const Header = () => {
       <div className="mt-[20px] w-full flex justify-center gap-[10px]  items-center">
         <img className="hidden vsm:block w-[13%]" src={img2} alt="arrow" />
         <p className="flex-2 sm:text-[20px] font-MavenPro font-[500] break-all text-center">
-          1 $vottcoin = $0.000531
+          1 $Vottcoin = 0.00002125 SOL
         </p>
         <img className="hidden vsm:block w-[13%]" src={img1} alt="arrow" />
       </div>
