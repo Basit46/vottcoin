@@ -72,7 +72,7 @@ const HowToBuy = () => {
                 transactions per second, and fees for both developers and users
                 remain less than $0.0025.
               </li>
-              <li>Choose a compatible wallet like MetaMask or Trust Wallet.</li>
+              <li>Choose a compatible wallet like <a style={{color: "blue", textDecoration: "underline", textDecorationColor: "blue"}} href="https://phantom.app" rel="noreferrer" target="_blank">Phantom</a>.</li>
               <li>Download and install the wallet extension or app.</li>
               <li>Create a new wallet and securely store your seed phrase.</li>
             </ul>
@@ -86,11 +86,10 @@ const HowToBuy = () => {
 
             <ul>
               <li>
-                Add funds to your wallet. You’ll need to purchase cryptocurrency
-                (e.g., ETH or BNB) to buy VottCoin tokens.
+                Add funds to your wallet. You’ll need to purchase SOL to buy VottCoin tokens.
               </li>
               <li>
-                You can buy these cryptocurrencies directly through your wallet
+                You can buy SOL directly through your wallet
                 using available payment options (credit card, bank transfer,
                 etc.).
               </li>
@@ -99,7 +98,7 @@ const HowToBuy = () => {
         </div>
 
         <div className="mt-[50px] flex items-end justify-center gap-[30px]">
-          <div className="item w-[340px] h-fit">
+          {/* <div className="item w-[340px] h-fit">
             <div>
               <div className="h-[33px] w-[5px] bg-[#FFC227]" />
               <p>Step 5: Claim Your Tokens</p>
@@ -115,7 +114,7 @@ const HowToBuy = () => {
                 to your wallet.
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="item w-[340px] self-stretch ">
             <div>
@@ -125,7 +124,7 @@ const HowToBuy = () => {
 
             <ul>
               <li>
-                Visit our official website and click on the "Connect Wallet"
+                On this page, click on the "Connect Wallet"
                 button.
               </li>
               <li>Select your wallet provider and authorize the connection.</li>
@@ -139,7 +138,6 @@ const HowToBuy = () => {
             </div>
 
             <ul>
-              <li>Navigate to the "Presale" page on our website.</li>
               <li>
                 Enter the amount of cryptocurrency you want to spend, and the
                 system will calculate the equivalent VottCoin tokens.
@@ -165,7 +163,7 @@ const HowToBuy = () => {
               per second, and fees for both developers and users remain less
               than $0.0025.
             </li>
-            <li>Choose a compatible wallet like MetaMask or Trust Wallet.</li>
+            <li>Choose a compatible wallet like <a style={{color: "blue", textDecoration: "underline", textDecorationColor: "blue"}} href="https://phantom.app" rel="noreferrer" target="_blank">Phantom</a>.</li>
             <li>Download and install the wallet extension or app.</li>
             <li>Create a new wallet and securely store your seed phrase.</li>
           </ul>
@@ -179,11 +177,10 @@ const HowToBuy = () => {
 
           <ul>
             <li>
-              Add funds to your wallet. You’ll need to purchase cryptocurrency
-              (e.g., ETH or BNB) to buy VottCoin tokens.
+              Add funds to your wallet. You’ll need to purchase SOL to buy VottCoin tokens.
             </li>
             <li>
-              You can buy these cryptocurrencies directly through your wallet
+              You can buy SOL directly through your wallet
               using available payment options (credit card, bank transfer,
               etc.).
             </li>
@@ -198,7 +195,7 @@ const HowToBuy = () => {
 
           <ul>
             <li>
-              Visit our official website and click on the "Connect Wallet"
+              On this page, click on the "Connect Wallet"
               button.
             </li>
             <li>Select your wallet provider and authorize the connection.</li>
@@ -212,7 +209,6 @@ const HowToBuy = () => {
           </div>
 
           <ul>
-            <li>Navigate to the "Presale" page on our website.</li>
             <li>
               Enter the amount of cryptocurrency you want to spend, and the
               system will calculate the equivalent VottCoin tokens.
@@ -221,7 +217,7 @@ const HowToBuy = () => {
           </ul>
         </div>
 
-        <div className="item w-[95%] vsm:w-[80%] md:w-[340px] self-stretch">
+        {/* <div className="item w-[95%] vsm:w-[80%] md:w-[340px] self-stretch">
           <div>
             <div className="h-[33px] w-[5px] bg-[#FFC227]" />
             <p>Step 5: Claim Your Tokens</p>
@@ -237,7 +233,7 @@ const HowToBuy = () => {
               your wallet.
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );
