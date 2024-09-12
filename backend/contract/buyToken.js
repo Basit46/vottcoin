@@ -9,7 +9,7 @@ import {
 } from "@solana/web3.js";
 import { connection } from '../utils/helper.js';
 import { createAccountInfo, checkAccountInitialized } from "./utils.js";
-import { getAssociatedTokenAddressSync, TOKEN_PROGRAM_ID } from "@solana/spl-token";
+import { getAssociatedTokenAddressSync, TOKEN_PROGRAM_ID, getAccount, createAssociatedTokenAccountInstruction, TokenInvalidAccountOwnerError, TokenAccountNotFoundError } from "@solana/spl-token";
 import { TokenSaleAccountLayout } from "./account.js";
 import BN from "bn.js";
 
@@ -41,6 +41,33 @@ export default async function transaction(buyerPubkey, number_of_tokens) {
 
   const PDA = await PublicKey.findProgramAddress([Buffer.from("token_sale")], tokenSaleProgramId);
 
+  const {
+    context: { slot: minContextSlot },
+    value: { blockhash, lastValidBlockHeight },
+  } = await connection.getLatestBlockhashAndContext();
+
+  const tx = new Transaction({
+    blockhash,
+    lastValidBlockHeight,
+    feePayer: new PublicKey(buyerPubkey),
+  });
+
+  try {
+    await getAccount(connection, buyerTokenAccount);
+  } catch (error) {
+    if (error instanceof TokenAccountNotFoundError || error instanceof TokenInvalidAccountOwnerError) {
+      const createATAInstruction = createAssociatedTokenAccountInstruction(
+        new PublicKey(buyerPubkey),
+        buyerTokenAccount,
+        new PublicKey(buyerPubkey),
+        tokenPubkey
+      );
+      tx.add(createATAInstruction);
+    } else {
+      throw error;
+    }
+  }
+
   const buyTokenIx = new TransactionInstruction({
     programId: tokenSaleProgramId,
     keys: [
@@ -57,17 +84,6 @@ export default async function transaction(buyerPubkey, number_of_tokens) {
     data: Buffer.from(Uint8Array.of(instruction, ...new BN(number_of_tokens).toArray("le", 8))),
   });
 
-  
-  const {
-    context: { slot: minContextSlot },
-    value: { blockhash, lastValidBlockHeight },
-  } = await connection.getLatestBlockhashAndContext();
-
-  const tx = new Transaction({
-    blockhash,
-    lastValidBlockHeight,
-    feePayer: new PublicKey (buyerPubkey),
-  });
   tx.add(buyTokenIx);
 
   const serializedTransaction = tx.serialize({
