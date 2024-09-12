@@ -149,13 +149,13 @@ const admin = () => {
       </div>
       <div>
       Number of tokens for Presale:
-      <input style={{margin: '0px 20px'}} onChange={(e) => setTokenAmount(e.target.value)} />
+      <input style={{margin: '0px 20px', color: 'black'}} onChange={(e) => setTokenAmount(e.target.value)} />
       Price of each token:
-      <input style={{margin: '0px 20px'}} onChange={(e) => setTokenPrice(e.target.value)} />
+      <input style={{margin: '0px 20px', color: 'black'}} onChange={(e) => setTokenPrice(e.target.value)} />
         <button onClick={handleStart} style={{backgroundColor: "green"}}>Start Presale</button>
       </div>
       <div>
-        <input style={{marginRight: '20px'}} onChange={(e) => setUpdateAmount(e.target.value)} />
+        <input style={{marginRight: '20px', color: 'black'}} onChange={(e) => setUpdateAmount(e.target.value)} />
         <button onClick={handleUpdate} style={{backgroundColor: "blue"}}>Update Token Price</button>
       </div>
       <div>
